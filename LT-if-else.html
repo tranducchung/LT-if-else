@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VHTM</title>
+</head>
+<h1>Hệ thống đăng nhập</h1>
+<p>Username:</p>
+<input type="text" id="use" value="Input Username">
+<p>Password:</p>
+<input type ='password' id="pass" value="Input Password">
+<hr>
+<button type="button" onclick="nhan()"> Login </button>
+<body>
+<script>
+function nhan() {
+    let a =document.getElementById("use").value;
+    let b =document.getElementById("pass").value;
+    if (a==="Admin") {
+        if (b==="TheMaster"){alert("Welcome")}
+        else if (b===""){alert("Canceled")}
+        else {alert("Wrong password")}
+    }
+    else if (a===""){alert("canceld")}
+    else {alert(" I don't know")}
+}
+</script>
+
+</body>
+</html>
